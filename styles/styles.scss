@@ -1,54 +1,192 @@
 @import "vars";
 
 .div___Principal-container-withe {
-    background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 .nav__bar {
-    .nav-bar__item{
-        margin: 0px 15px;
-    }
-    display: flex;
-    justify-content: flex-end;
+  .nav-bar__item {
+    margin: 0px 15px;
+  }
+  display: flex;
+  justify-content: flex-end;
 }
 
-@mixin nav-buttons ($nav-button-family, $nav-button-font-style, $nav-button-font-weight, $nav-button-font-size, $nav-button-line-height,$nav-button-text-align, $nav-button-letter-spacing) {
-    font-family: $nav-button-font-family ;
-    font-style: $nav-button-font-style;
-    font-weight: $nav-button-font-weight;
-    font-size: $nav-button-font-size;
-    line-height: $nav-button-line-height;
-    text-align: $nav-button-text-align;
-    letter-spacing: $nav-button-letter-spacing;
+@mixin nav-buttons(
+  $nav-button-family,
+  $nav-button-font-style,
+  $nav-button-font-weight,
+  $nav-button-font-size,
+  $nav-button-line-height,
+  $nav-button-text-align,
+  $nav-button-letter-spacing
+) {
+  font-family: $nav-button-font-family;
+  font-style: $nav-button-font-style;
+  font-weight: $nav-button-font-weight;
+  font-size: $nav-button-font-size;
+  line-height: $nav-button-line-height;
+  text-align: $nav-button-text-align;
+  letter-spacing: $nav-button-letter-spacing;
 }
 
 .a__nav-buttons--black {
-    @include nav-buttons($nav-button-font-family, $nav-button-font-style, $nav-button-font-weight, $nav-button-font-size, $nav-button-line-height, $nav-button-text-align, $nav-button-letter-spacing);
-    color: black;
+  @include nav-buttons(
+    $nav-button-font-family,
+    $nav-button-font-style,
+    $nav-button-font-weight,
+    $nav-button-font-size,
+    $nav-button-line-height,
+    $nav-button-text-align,
+    $nav-button-letter-spacing
+  );
+  color: black;
 }
 
 .button__contact-us--black {
-    color: #FFFFFF;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    background-color: black;
-    border-radius: 5px;
-    line-height: 16px;
-    text-align: center;
-    letter-spacing: 0.05em;
+  color: #ffffff;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  background-color: black;
+  border-radius: 5px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
 }
 
 .p__modelo-clase {
-    font-family: 'Abril Fatface', cursive;
-    position: absolute;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 43px;
+  font-family: "Abril Fatface", cursive;
+  position: absolute;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 43px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.p__piano-type {
+  font-family: "Abril Fatface";
+  font-weight: 400;
+  font-size: 32px;
+  text-align: center;
+}
+
+.div__piano-search {
+  display: flex;
+  justify-content: space-around;
+  .div__piano-card {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 250px;
+    height: 239px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.div__piano-list {
+  display: flex;
+  justify-content: center;
+  .ul__pianos-show {
+    display: flex;
+    padding: 0px;
+    li {
+      margin: 0px 8px;
+      list-style: none;
+    }
+  }
+}
+
+.div__price {
+  width: 161px;
+  height: 36px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img__piano-card {
+  width: 205px;
+  height: 165.86px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #dbdbdb;
+  position: absolute;
+  bottom: 250px;
+}
+
+.button__ver-mas {
+  width: 129px;
+  height: 32px;
+  border-radius: 8px;
+  background-color: #000000;
+  color: #dbdbdb;
+ 
+}
+
+.button__buy {
+  width: 36px;
+  height: 36px;
+  background-color: #000000;
+  border-radius: 8px;
+}
+.div__fill-cards {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 125px;
+}
+
+.div__button-cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.div__button-vermas {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.div__piano-title {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    position: relative;
+    bottom: 75px;
+}
+
+@media only screen and (max-width: 600px) {
+  .div__piano-search {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
-    letter-spacing: 0.05em;
+    .div__piano-card {
+      width: 250px;
+      height: 350px;
+      margin-bottom: 15px;
+    }
+  }
+  .img__piano-card {
+    width: 205px;
+    height: 165.86px;
+    position: static;
+  }
+  .div__fill-cards {
+    position: static;
+  }
+  
+  .div__piano-title {
+    position: static;
+  }
+
 }
