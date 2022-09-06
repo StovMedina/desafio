@@ -114,6 +114,7 @@
   width: 36px;
   height: 36px;
   background-color: #000000;
+  border-radius: 8px;
 }
 
 .div__fill-cards {
@@ -126,6 +127,20 @@
 .div__button-cards {
   display: flex;
   justify-content: space-around;
+}
+
+.div__button-vermas {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.div__piano-title {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  position: relative;
+  bottom: 75px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -145,6 +160,9 @@
     position: static;
   }
   .div__fill-cards {
+    position: static;
+  }
+  .div__piano-title {
     position: static;
   }
 }/*# sourceMappingURL=styles.css.map */
