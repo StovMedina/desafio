@@ -1,3 +1,169 @@
-h1 {
-  color: hotpink;
+.div__contact-info .div__contact-us {
+  width: 470px;
+  height: 62px;
+  left: 245px;
+  top: 2567px;
+  font-family: "Abril Fatface";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 43px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin: 0 auto;
+  text-align: center;
+}
+.div__contact-info .div__question {
+  display: block;
+  -webkit-padding-start: 2px;
+          padding-inline-start: 2px;
+  -webkit-padding-end: 2px;
+          padding-inline-end: 2px;
+  border-width: initial;
+  border-style: none;
+  box-sizing: inherit;
+  width: 561px;
+  height: 57px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 2rem auto;
+}
+
+.div__contact .input__name {
+  box-sizing: border-box;
+  width: 464px;
+  height: 36px;
+  left: 248px;
+  top: 2798px;
+  background: rgba(0, 0, 0, 0.65);
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  -ms-writing-mode: lr-tb;
+      writing-mode: horizontal-tb;
+  letter-spacing: normal;
+  line-height: normal;
+  display: inline-block;
+  text-align: start;
+  -webkit-appearance: auto;
+     -moz-appearance: auto;
+          appearance: auto;
+  cursor: text;
+  box-sizing: inherit;
+}
+
+.div__contact .input__telephone {
+  box-sizing: border-box;
+  width: 224px;
+  height: 36px;
+  left: 248px;
+  top: 2902px;
+  background: rgba(0, 0, 0, 0.65);
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+}
+
+.div__contact .input__email {
+  box-sizing: border-box;
+  width: 224px;
+  height: 36px;
+  left: 488px;
+  top: 2902px;
+  background: rgba(0, 0, 0, 0.65);
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  margin-left: 2rem auto;
+  display: flex;
+}
+
+.div__contact .input__tell-us {
+  box-sizing: border-box;
+  width: 464px;
+  height: 148px;
+  left: 248px;
+  top: 3006px;
+  display: flex;
+  background: rgba(0, 0, 0, 0.65);
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+}
+
+.div__contact .label__name {
+  width: 106px;
+  height: 36px;
+  left: 248px;
+  top: 2752px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.div__contact .label__telephone {
+  width: 199px;
+  height: 36px;
+  left: 248px;
+  top: 2858px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.div__contact .label__email {
+  width: 199px;
+  height: 36px;
+  left: 488px;
+  top: 2858px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.div__contact .label__tell-us-more {
+  width: 439px;
+  height: 36px;
+  left: 248px;
+  top: 2962px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.input__submit {
+  width: 464px;
+  height: 32px;
+  left: 248px;
+  top: 3178px;
+  color: white;
+  background: #000000;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 15px;
+  padding: auto;
 }/*# sourceMappingURL=styles.css.map */
